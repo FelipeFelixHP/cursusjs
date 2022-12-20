@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body{
+            font: normal 16pt arial;
+            text-align: center;
+        
+            
+        }
+        input {
+            font: normal 18pt arial;
+            width: 120px;
+        }
+        div#res{
+            margin-top: 20px;
+        }
+
+        h1{
+            background: rgb(230, 83, 15);
+            color: rgb(24, 21, 8);
+            width: 87%;
+            height: 20%;
+            margin: 2%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Minha calculadora</h1>
+    <input type="number" name="txt1" id="txt1"> :
+    <input type="number" name="txt2" id="txt2">
+    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="Subtrair" onclick="subtrair()">
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+    <input type="button" value="Divisão" onclick="divisão()">
+    <div id="res"><strong>Resuldado</strong></div>
+</body>
+
+<script>
+     function divisão(){
+        var tn1 = window.document.querySelector('input#txt1')
+        var tn2 = window.document.querySelector('input#txt2')
+        var res = window.document.querySelector('div#res')
+        var n1 = Number(tn1.value)
+        var n2 = Number (tn2.value)
+        var r = n1 / n2 
+        res.innerHTML = ` A Divisão entre ${n1} e ${n2} é igual a <strong>${r}</strong>`
+           }
+
+
+     function multiplicar(){
+        var tn1 = window.document.querySelector('input#txt1')
+        var tn2 = window.document.querySelector('input#txt2')
+        var res = window.document.querySelector('div#res')
+        var n1 = Number(tn1.value)
+        var n2 = Number (tn2.value)
+        var r = n1 * n2 
+        res.innerHTML = ` A Multiplicação entre ${n1} e ${n2} é igual a <strong>${r}</strong>`
+           }
+
+
+     function subtrair(){
+        var tn1 = window.document.querySelector('input#txt1')
+        var tn2 = window.document.querySelector('input#txt2')
+        var res = window.document.querySelector('div#res')
+        var n1 = Number(tn1.value)
+        var n2 = Number (tn2.value)
+        var r = n1 - n2 
+        res.innerHTML = ` A Subtração entre ${n1} e ${n2} é igual a <strong>${r}</strong>`
+           }
+
+    function somar(){
+        var tn1 = window.document.querySelector('input#txt1')
+        var tn2 = window.document.querySelector('input#txt2')
+        var res = window.document.querySelector('div#res')
+        var n1 = Number(tn1.value)
+        var n2 = Number (tn2.value)
+        var r = n1 + n2 
+        res.innerHTML = `  A Soma entre ${n1} e ${n2} é igual a   <strong>${r}</strong>`
+           }
+
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06</title>
+    <style>
+        div#area {
+            background: red;
+            font: normal 22px arial; 
+            color: seashell;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="Clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+
+    </div>
+</body>
+<script>
+    // Criação de objeto 
+    var a = window.document.getElementById('area')
+
+    // metodos (onclick="Clicar ()" onmouseenter="entrar()" onmouseout="sair() )
+   // a.addEventListener('clicar', clicar)
+    //a.addEventListener('mouseenter', Entrar)
+    //a.addEventListener('mouseout', Sair)
+
+    function Clicar() {
+        
+        a.innerText = "Clicou!"
+        a.style.background = "red"
+    }
+    function entrar(){
+         a.innerText = "Entrou!"
+    }
+    function sair(){
+        a.innerText= "Saiu"
+        a.style.background = "blue"
+    }
+</script>
+</html>

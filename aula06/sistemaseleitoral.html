@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Eleitoral</title>
+</head>
+<body>
+Digite sua idade : <input type="number" name="idade1" id="idade1">
+                    <input type="button" value="confirmar" onclick="confir()">
+                    <div id="res"><strong>Resuldado</strong></div>
+                    <div id="voto"><strong> </strong></div>
+</body>
+    <script> 
+       function confir() {
+        var suaidade = document.querySelector("input#idade1")
+        var idade = Number(suaidade.value)
+    
+    if (idade > 15 && idade < 18 || idade > 65) {
+	voto.innerHTML=(` você tem ${idade} anos, Seu voto é opcional`)
+    } else if (idade < 16) {
+	voto.innerHTML=(` você tem ${idade} anos, Não pode votar`)
+    } else {
+	voto.innerHTML=(` você tem ${idade} anos, Voto obrigatorio`)
+}
+       }
+    </script>
+</html>

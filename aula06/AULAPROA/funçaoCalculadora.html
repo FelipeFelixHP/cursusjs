@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cadastroProa - Copia.js"></script>
+    <title>Função</title>
+</head>
+<body>
+    
+</body>
+    <script> 
+        var somar = (a, b) => {
+            return 5 + 6
+        }
+
+        var subtrair = (a, b) => {
+            return a - b
+        }
+
+        var dividir = (a, b) => {
+            return a / b
+        }
+
+        var multiplicar = (a, b) => {
+            return a * b
+        }
+
+
+        var menu = parseInt(window.prompt(`Escolha a opção desejada:
+    1 - somar
+    2 - subtrair
+    3 - dividir
+    4 - multiplicar
+    5 - Sair do sistema
+    `))
+
+    switch(menu){
+        case 1: somar()
+        console.log(somar)
+    }
+
+    </script>
+</html>

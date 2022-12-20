@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Proa</title>
+</head>
+<body>
+    
+</body>
+<script>
+   
+do{
+    var escolha = Number(prompt(`Escolha a opção desejada :  
+    1 - Calculadora;
+    2 - Calcular media (aprovado e reprovado);
+    
+    `))
+    //3 - sair
+    switch(escolha) {
+        case 1:{
+            var num1 = Number(prompt(` Digite o primeiro número: `))
+            var num2 = Number(prompt(` Digite p segundo número: `))
+            var opcao = Number(prompt(` Escolha a operação desejada: 
+            1 - adição;
+            2 - subtração; 
+            3 - divisão;
+            4 - Miltiplicação
+             `))
+             switch(opcao){
+                 case 1: alert(` O resuldado da adição é ${num1 + num2}`);break;
+                 case 2: alert(` O resuldado da subtração é ${num1 - num2}`);break;
+                 case 3: alert(` O resuldado da divisão é ${num1 / num2}`);break;
+                 case 4: alert(` O resuldado da Miltiplicação é ${num1 * num2}`);break;
+                 default: alert("Opção Invalida!" )
+             }
+        
+        
+        }; break // calculadora
+        
+        case 2: {
+            var nota1 = Number(prompt(` Digite o primeiro nota: `))
+            var nota2 = Number(prompt(` Digite p segunda nota: `))
+            var media = (nota1+nota2) / 2
+
+            if (media >=7){
+                alert(`Aluno Aprovado com a media ${media}`)
+            }else if (media >=5 && media <7){
+                alert(` Aluno em recuparação com a media ${media}`)
+            }else {
+                alert(` Aluno reprovado com a media ${media}`)
+            }
+        };break
+        default: alert("Opçao invalida")
+    }
+    var pergunta = window.prompt(`Deseja continuar?
+    1 - sim
+    2 - não
+    `)
+    }while(pergunta == 1)
+        
+    
+    
+            
+    
+                        
+    
+</script>
+</html>

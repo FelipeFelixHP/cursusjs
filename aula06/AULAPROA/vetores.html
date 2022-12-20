@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cadastrointeraçao.js"></script>
+    <title>Vetores</title>
+</head>
+<body>
+    <form>
+        <table>
+            <caption>Cadastro de novos Clientes</caption>
+            <!--Nome do produto-->
+            <tr>
+                <td class="alinharRotulos">Nome do Cliente:</td>
+                <td><input id="txtNomecliente" type="text"></td>
+            </tr>
+            <!--Código do produto-->
+            <tr>
+                <td class="alinharRotulos">CPF do cliente:</td>
+                <td><input id="txtcpfcliente" type="text"></td>
+            </tr>
+            <!--Quantidade do produto-->
+            <tr>
+                <td class="alinharRotulos">Endereço do Cliente:</td>
+                <td><input id="txtendereço" type="text"></td>
+            </tr>
+            <!--Código do produto-->
+            <tr>
+                <td class="alinharRotulos">Telefone do cliente:</td>
+                <td><input id="txttelefone" type="text"></td>
+            </tr>
+            <!--Quantidade do produto-->
+
+
+
+
+
+
+
+
+    <input type="button" value="Cadastrar" class="alinhaBtns" onclick="cadastrar('txtNomecliente','txtcpfcliente','txtendereço', 'txttelefone')">
+    <input type="button" value="Ver Clientes" class="alinhaBtns" onclick="window.open('listacliente.html','_self')">
+    <input type="reset" value="Limpar" class="alinhaBtns">
+</body>
+</html>
